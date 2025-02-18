@@ -58,6 +58,9 @@ import { useAuthStore } from '~/stores/auth'; // Import the Pinia store
 import { $fetch } from 'ofetch'; // Use $fetch for making API requests
 import { useRouter } from 'vue-router';
 
+definePageMeta({
+  middleware: 'auth' // Protects this route with the `auth.js` middleware
+});
 
 const user = ref(null);
 const error = ref(null);
