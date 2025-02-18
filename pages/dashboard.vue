@@ -58,6 +58,7 @@ import { useAuthStore } from '~/stores/auth'; // Import the Pinia store
 import { $fetch } from 'ofetch'; // Use $fetch for making API requests
 import { useRouter } from 'vue-router';
 
+
 const user = ref(null);
 const error = ref(null);
 const router = useRouter();
@@ -119,3 +120,5 @@ const logout = async () => {
 };
 
 </script>
+
+
